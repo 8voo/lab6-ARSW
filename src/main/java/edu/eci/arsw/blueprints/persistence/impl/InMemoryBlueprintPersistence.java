@@ -27,14 +27,19 @@ public class InMemoryBlueprintPersistence implements BlueprintsPersistence{
         //load stub data
         Point[] pts=new Point[]{new Point(140, 140),new Point(115, 115)};
         Blueprint bp=new Blueprint("_authorname_", "_bpname_ ",pts);
+
+        Point[] pts2=new Point[]{new Point(1, 1),new Point(10, 10)};
+        Blueprint bp2=new Blueprint("enrique", "lala",pts2);
+        Point[] pts3=new Point[]{new Point(20, 50),new Point(11, 21)};
+        Blueprint bp3=new Blueprint("enrique", "thepaint3",pts3);
+
+        Point[] pts4=new Point[]{new Point(30, 12),new Point(11, 20)};
+        Blueprint bp4=new Blueprint("sergio", "thepaint4",pts4);
+
         blueprints.put(new Tuple<>(bp.getAuthor(),bp.getName()), bp);
-        Point[] pts2=new Point[]{new Point(0, 0),new Point(10, 10)};
-        Blueprint bp2=new Blueprint("john", "thepaint2",pts2);
-        Point[] pts3=new Point[]{new Point(0, 0),new Point(11, 20)};
-        Blueprint bp3=new Blueprint("john", "thepaint3",pts3);
-        blueprints.put(new Tuple<>(bp2.getAuthor(),bp.getName()), bp2);
-        blueprints.put(new Tuple<>(bp3.getAuthor(),bp.getName()), bp3);
-        
+        blueprints.put(new Tuple<>(bp2.getAuthor(),bp2.getName()), bp2);
+        blueprints.put(new Tuple<>(bp3.getAuthor(),bp3.getName()), bp3);
+        blueprints.put(new Tuple<>(bp4.getAuthor(),bp4.getName()), bp4);
     }    
     
     @Override

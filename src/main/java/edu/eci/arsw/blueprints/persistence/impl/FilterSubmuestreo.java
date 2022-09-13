@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-//@Service
+@Service
 public class FilterSubmuestreo implements FiltersPersitence {
     @Override
     public Blueprint filterBlueprint(Blueprint bp) {

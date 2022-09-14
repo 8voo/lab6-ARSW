@@ -112,7 +112,9 @@ Del anterior diagrama de componentes (de alto nivel), se desprendió el siguient
 El componente BlueprintsRESTAPI funcionará en un entorno concurrente. Es decir, atederá múltiples peticiones simultáneamente (con el stack de aplicaciones usado, dichas peticiones se atenderán por defecto a través múltiples de hilos). Dado lo anterior, debe hacer una revisión de su API (una vez funcione), e identificar:
 
 * Qué condiciones de carrera se podrían presentar?
+	Al momento de acceder, actualizar o crear se presentan condiciones carrera cuando dos o mas de estas acciones intentan acceder a la misma variable.
 * Cuales son las respectivas regiones críticas?
+	Todos los metodos acceden a la misma variable Hashmap, or lo tanto se hace que sea concurrente
 
 Ajuste el código para suprimir las condiciones de carrera. Tengan en cuenta que simplemente sincronizar el acceso a las operaciones de persistencia/consulta DEGRADARÁ SIGNIFICATIVAMENTE el desempeño de API, por lo cual se deben buscar estrategias alternativas.
 

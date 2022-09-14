@@ -12,7 +12,15 @@ public class Blueprint {
     private String author=null;
     
     private List<Point> points=null;
-    
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     private String name=null;
             
     public Blueprint(String author,String name,Point[] pnts){

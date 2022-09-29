@@ -3,12 +3,11 @@ table, th, td {
     padding: 5px;
 }
 #canva {
-    height: 40%;
-    width: 60%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+    height: 35em;
+    width: 50%;
     border:3px solid #60606b;
+    position: relative;
+    left: 10%;
     background-color: #cbcbd8;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -16,11 +15,26 @@ table, th, td {
     border-style: dashed;
 }
 
-.canvas-comtainer{
-    width: fit-content;
-    
+.canvas-container{
+    height: 50%;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
+}
+
+#total-points{
+    position: absolute;
+    top: 5cm;
+}
+
+button{
+    border-radius: 2px;
+    background-color: #000000;
+    color: white;
+}
+
+table{
+    border-radius: 4px;
 }

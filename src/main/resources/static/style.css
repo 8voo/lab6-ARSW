@@ -2,3 +2,25 @@ table, th, td {
     border : 1px solid black;
     padding: 5px;
 }
+#canva {
+    height: 40%;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border:3px solid #60606b;
+    background-color: #cbcbd8;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 1%;
+    border-style: dashed;
+}
+
+.canvas-comtainer{
+    width: fit-content;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}

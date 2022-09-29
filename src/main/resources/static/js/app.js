@@ -40,11 +40,13 @@ var App = (function(){
         var canva = document.querySelector('canvas');
         var points = bpData.points;
         var quanPoints = points.length
+        var ctx = canva.getContext("2d");
+        ctx.clearRect(0, 0, canva.width, canva.height);
+        ctx.beginPath();
         for (var i = 0 ; i < quanPoints-1; i++){
             ctx = canva.getContext("2d");
             ctx.moveTo(points[i].x,points[i].y);
             ctx.lineTo(points[i+1].x,points[i+1].y);
-            ctx.clearRect(0, 0, canva.width, canva.height);
             ctx.stroke();
         }
         

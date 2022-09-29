@@ -123,4 +123,6 @@
 
 13. Modifique el código de app.js de manera que sea posible cambiar entre el 'apimock' y el 'apiclient' con sólo una línea de código.
 
+Hicimos un cambio en este punto, de forma que se pueda buscar tanto en apimock como en apiclient sin necesidad de cambiar ninguna linea de codigo. Cambio aprovado por el profe.
+
 14. Revise la [documentación y ejemplos de los estilos de Bootstrap](https://v4-alpha.getbootstrap.com/examples/) (ya incluidos en el ejercicio), agregue los elementos necesarios a la página para que sea más vistosa, y más cercana al mock dado al inicio del enunciado.

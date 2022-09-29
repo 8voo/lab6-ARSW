@@ -16,17 +16,6 @@ var App = (function(){
         }
     };
 
-    //var getAPIRestBlueprints = function(){
-        //var autname = $("#autname").val();
-        //if (autname == ""){
-            //alert("cagastes");
-        //}        
-        //else{
-//            
-            //apiclient.getBlueprintsByAuthor(autname,crearData);
-        //}
-    //};
-
     var crearData = function(autdata){
         //console.log(JSON.stringify(autdata) + " " + typeof autdata + "algo")
         var bps = autdata;

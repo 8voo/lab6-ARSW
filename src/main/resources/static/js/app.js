@@ -1,6 +1,10 @@
+//api = apiclient;
+api = apimock;
+
 
 var App = (function(){
     
+
 
     var getBlueprints = function(){
         var autname = $("#autname").val();
@@ -11,7 +15,20 @@ var App = (function(){
             apimock.getBlueprintsByAuthor(autname,crearData);
         }
     };
+
+    //var getAPIRestBlueprints = function(){
+        //var autname = $("#autname").val();
+        //if (autname == ""){
+            //alert("cagastes");
+        //}        
+        //else{
+//            
+            //apiclient.getBlueprintsByAuthor(autname,crearData);
+        //}
+    //};
+
     var crearData = function(autdata){
+        //console.log(JSON.stringify(autdata) + " " + typeof autdata + "algo")
         var bps = autdata;
         var newPbs = bps.map(function(bp){
             return {

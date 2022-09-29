@@ -68,6 +68,8 @@
     http://localhost:8080/index.html
     ```
     2. Al abrir la consola de desarrollador del navegador, NO deben aparecer mensajes de error 404 (es decir, que las librerías de JavaScript se cargaron correctamente).
+    
+    
     ![image](https://user-images.githubusercontent.com/98104282/192927292-5a5dde01-94dd-4a28-8736-28faceb1ede0.png)
 
 
@@ -101,6 +103,8 @@
 5. Asocie la operación antes creada (la de app.js) al evento 'on-click' del botón de consulta de la página.
 
 6. Verifique el funcionamiento de la aplicación. Inicie el servidor, abra la aplicación HTML5/JavaScript, y rectifique que al ingresar un usuario existente, se cargue el listado del mismo.
+    
+    
 ![image](https://user-images.githubusercontent.com/98104282/192928541-3ef1c10c-d5a7-4ba8-ada3-fa75c76cf295.png)
 
 

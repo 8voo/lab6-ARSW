@@ -19,6 +19,8 @@ var App = (function(){
                 points : bp.points.length
             }
         });
+        var totalPuntos = newPbs.reduce((curr, {points}) => curr+points, 0);
+        $('#total-points').text("Total user points: " + totalPuntos);
         var bodyTable = $('tbody');
         bodyTable.html('');
         newPbs.map(function(bp){
@@ -26,8 +28,6 @@ var App = (function(){
             
             table.append("ks<tr> \n <td>"+ bp.name +"</td> \n <td>"+ bp.points +"</td> \n <td><button>Open</button></td> \n </tr>");
         });
-
-        var totalPuntos = newPbs.reduce((prev, curr) => prev+curr, 0);
     }
     
     return{

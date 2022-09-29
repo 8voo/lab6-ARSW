@@ -5,7 +5,7 @@
 
 ### Trabajo individual o en parejas. A quienes tuvieron malos resultados en el parcial anterior se les recomienda hacerlo individualmente.
 
-![](img/mock.png)
+![image](https://user-images.githubusercontent.com/98104282/192927183-f612b8b1-bd5e-4a3a-b65e-f8529cbd6675.png)
 
 * Al oprimir 'Get blueprints', consulta los planos del usuario dado en el formulario. Por ahora, si la consulta genera un error, sencillamente no se mostrará nada.
 * Al hacer una consulta exitosa, se debe mostrar un mensaje que incluya el nombre del autor, y una tabla con: el nombre de cada plano de autor, el número de puntos del mismo, y un botón para abrirlo. Al final, se debe mostrar el total de puntos de todos los planos (suponga, por ejemplo, que la aplicación tienen un modelo de pago que requiere dicha información).
@@ -68,6 +68,10 @@
     http://localhost:8080/index.html
     ```
     2. Al abrir la consola de desarrollador del navegador, NO deben aparecer mensajes de error 404 (es decir, que las librerías de JavaScript se cargaron correctamente).
+    
+    
+    ![image](https://user-images.githubusercontent.com/98104282/192927292-5a5dde01-94dd-4a28-8736-28faceb1ede0.png)
+
 
 ## Front-End - Lógica
 
@@ -99,6 +103,10 @@
 5. Asocie la operación antes creada (la de app.js) al evento 'on-click' del botón de consulta de la página.
 
 6. Verifique el funcionamiento de la aplicación. Inicie el servidor, abra la aplicación HTML5/JavaScript, y rectifique que al ingresar un usuario existente, se cargue el listado del mismo.
+    
+    
+![image](https://user-images.githubusercontent.com/98104282/192928541-3ef1c10c-d5a7-4ba8-ada3-fa75c76cf295.png)
+
 
 ## Para la próxima semana
 
